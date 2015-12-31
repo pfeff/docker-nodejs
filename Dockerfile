@@ -13,6 +13,7 @@ RUN tar xvzf node-v4.2.4-linux-x64.tar.gz
 RUN mv node-v4.2.4-linux-x64 /node
 
 WORKDIR /work
+ENV PATH /node/bin:$PATH
 
 ENTRYPOINT ["/node/bin/node"]
 
